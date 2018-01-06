@@ -22,16 +22,26 @@ for this to happen properly.
 function GenerateSantas(){
 	var Santas = [];
 	Santas.push(new SecretSanta("Jeremy"));
+	Santas.push(new SecretSanta("Sebastien"));
 	Santas.push(new SecretSanta("Rob"));
-	Santas.push(new SecretSanta("Deb"));
-	//Santas.push(new SecretSanta("Karen"));
-	//Santas.push(new SecretSanta("Jamelle"));
+	Santas.push(new SecretSanta("Karen"));
+	Santas.push(new SecretSanta("Jamelle"));
 	//Santas.push(new SecretSanta("Justin"));
 	
 	var unsuitableChecker = true;
+	
+	Santas[0].addUnsuitableName(Santas[1]);
+	Santas[0].addUnsuitableName(Santas[2]);
+	Santas[1].addUnsuitableName(Santas[0]);
+	Santas[1].addUnsuitableName(Santas[2]);
+	Santas[2].addUnsuitableName(Santas[0]);
+	//Santas[2].addUnsuitableName(Santas[1]);
+	Santas[3].addUnsuitableName(Santas[4]);
+	Santas[4].addUnsuitableName(Santas[3]);
+
 	unsuitableChecker = CheckUnsuitable(Santas, Santas[1], Santas[2]);
 	
-	//Santas[1].addUnsuitableName(Santas[2]);
+	//Santas[0].addUnsuitableName(Santas[1]);
 	//Santas[2].addUnsuitableName(Santas[1]);
 	//Santas[3].addUnsuitableName(Santas[0]);
 	
@@ -117,7 +127,9 @@ is allowed it will add it and return true, if not it will return false.
 */
 function CheckUnsuitable(santas, santa, unsuitableSanta){
 	if(CreateUniqueSuitableList(santas, santa)){
-		console.log("We did it");
+		console.log("We did it!");
+	}else{
+		console.log("We didn't do it!");
 	}
 	santa.addUnsuitableName(unsuitableSanta);
 }
@@ -131,12 +143,15 @@ function CreateUniqueSuitableList(santas, santa){
 	var uniqueSuitables = new Array(totalSantas);
 	for(var i = 0; i < totalSantas; i++){
 		uniqueSuitables[i] = [];
+		console.log("i = " + i);
+		console.log("Unsuitable List: " + santas[i].getUnsuitableNames());
 		//var totalSuitables = totalSantas - santas[i].getUnsuitableNames().length - 1; //santas - unsuitables - this santa
 		for(var j = 0; j < totalSantas; j++){
+			console.log("j = " + j);
 			var addSanta = true;
 			if(i != j){
-				for(var k = 0; k < santas[i].getUnsuitableNames().length; k++){							//not sure if santas should be i or j
-					if(santas[j].getSantaName() == santas[i].getUnsuitableNames()[k].getSantaName()){
+				for(var k = 0; k < santas[i].getUnsuitableNames().length; k++){
+					if(santas[j].getSantaName() == santas[i].getUnsuitableNames()[k]){
 						addSanta = false;
 					}
 				}
@@ -154,19 +169,19 @@ function CreateUniqueSuitableList(santas, santa){
 			}
 			if(addSanta){
 				uniqueSuitables[i].push(santas[j].getSantaName());
-				console.log("i = " + i + " j = " + j);
+				//console.log("i = " + i + " j = " + j);
 				console.log("First UniqueSuitables: "  + uniqueSuitables);
 			}
 			if(j == totalSantas - 1 && uniqueSuitables[i].length == 0){
 				addSanta = true;
 				var stealSanta = []; 
-				for(var k = 0; k < totalSantas; k++){
+				for(var k = 0; k < i; k++){
 					if(uniqueSuitables[k].length > 1){
 						for(var l = 0; l < uniqueSuitables[k].length; l++){
 							if(stealSanta.length == 0){
 								if(uniqueSuitables[k][l] != santas[i].getSantaName()){
 									for(var m = 0; m < santas[i].getUnsuitableNames().length; m++){
-										if(uniqueSuitables[k][l] == santas[i].getUnsuitableNames[m].getSantaName()){
+										if(uniqueSuitables[k][l] == santas[i].getUnsuitableNames()[m]){
 											addSanta = false;
 										}
 									}
@@ -189,16 +204,14 @@ function CreateUniqueSuitableList(santas, santa){
 				if(stealSanta.length != 0){
 					uniqueSuitables[stealSanta[1]].splice(stealSanta[2], 1);
 					uniqueSuitables[i].push(stealSanta[0]);
+				}else{
+					return false;
 				}
-				console.log("Second UniqueSuitables: " + uniqueSuitables);
+				console.log("Steal UniqueSuitables: " + uniqueSuitables);
 			}
 		}
 	}
-	if(uniqueSuitables.length == totalSantas){
-		return true;
-	}else{
-		return false;
-	}
+	return true;
 }
 
 GenerateSantas();
