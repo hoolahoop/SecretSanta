@@ -143,11 +143,11 @@ function CreateUniqueSuitableList(santas, santa){
 	var uniqueSuitables = new Array(totalSantas);
 	for(var i = 0; i < totalSantas; i++){
 		uniqueSuitables[i] = [];
-		console.log("i = " + i);
-		console.log("Unsuitable List: " + santas[i].getUnsuitableNames());
+		//console.log("i = " + i);
+		//console.log("Unsuitable List: " + santas[i].getUnsuitableNames());
 		//var totalSuitables = totalSantas - santas[i].getUnsuitableNames().length - 1; //santas - unsuitables - this santa
 		for(var j = 0; j < totalSantas; j++){
-			console.log("j = " + j);
+			//console.log("j = " + j);
 			var addSanta = true;
 			if(i != j){
 				for(var k = 0; k < santas[i].getUnsuitableNames().length; k++){
