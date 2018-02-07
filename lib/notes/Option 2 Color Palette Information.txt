@@ -1,0 +1,25 @@
+Dark Green Color Palette Properties:
+
+Set 1.
+
+Color 1: #a68ba6 - Light Pale Magenta
+Color 2: #823282 - Magenta
+Color 3: #5b2a5b - Gray Magenta
+Color 4: #2e002e - Dark Magenta
+Color 5: #2b0f2b - Very Dark Magenta
+
+Set 2.
+
+Color 1: #9e93ad - Light Pale Purple
+Color 2: #5c3b87 - Purple
+Color 3: #45305f - Gray Purple
+Color 4: #170330 - Dark Purple
+Color 5: #1e122d - Very Dark Purple
+
+Set 3.
+
+Color 1: #e4beca - Light Pale Rose
+Color 2: #b34566 - Rose
+Color 3: #7e3a4f - Gray Rose
+Color 4: #400013 - Dark Rose
+Color 5: #3b1520 - Very Dark Rose

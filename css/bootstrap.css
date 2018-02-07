@@ -18,7 +18,7 @@
   --white: #fff;
   --gray: #868e96;
   --gray-dark: #343a40;
-  --primary: #007bff;
+  --primary: #162D21;  /*--primary: #007bff;*/
   --secondary: #868e96;
   --success: #28a745;
   --info: #17a2b8;
@@ -8751,6 +8751,7 @@ button.bg-dark:hover {
   font-style: italic !important;
 }
 
+
 .text-white {
   color: #fff !important;
 }
@@ -8822,7 +8823,6 @@ a.text-dark:focus, a.text-dark:hover {
 .text-muted {
   color: #868e96 !important;
 }
-
 .text-hide {
   font: 0/0 a;
   color: transparent;

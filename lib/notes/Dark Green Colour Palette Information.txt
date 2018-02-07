@@ -1,0 +1,25 @@
+Dark Green Color Palette Properties:
+
+
+Color 1: #759188 - Light Pale Green (Light Background)
+Color 2: #5E7167 - Pale Green (Writing)
+Color 3: #43544B - Pale Gray Green (Offset Writing, italicized, links)
+Color 4: #162D21 - Dark Green (Vibrant)
+Color 5: #212C27 - Dark Gray Green (Dark background)
+
+
+
+Background:
+1 - Light
+2 - Success
+3 - Secondary
+4 - Primary
+5 - Dark
+
+
+Text:
+1 - Info
+2 - Primary
+3 - Primary links, Secondary
+4 - Success
+5 - Success links, Warning
