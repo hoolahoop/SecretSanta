@@ -108,24 +108,24 @@ Button color overrides
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(22, 45, 33, 0.5); /*box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);*/
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #5E7167;
+  border-color: #5E7167;
 }
 
 .btn-primary:not([disabled]):not(.disabled):active, .btn-primary:not([disabled]):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0062cc;
-  border-color: #005cbf;
+  background-color: #293f33; /*background-color: #0062cc;*/
+  border-color: #162D21; /*border-color: #005cbf;*/
 }
 
 .btn-primary:not([disabled]):not(.disabled):active:focus, .btn-primary:not([disabled]):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(22, 45, 33, 0.5); /*box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);*/
 }
 
 /*

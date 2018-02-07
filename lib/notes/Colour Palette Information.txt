@@ -7,6 +7,7 @@ Color 3: #43544B - Pale Gray Green (Offset Writing, italicized, links)
 Color 4: #162D21 - Dark Green (Vibrant)
 Color 5: #212C27 - Dark Gray Green (Dark background)
 
+New Added Color in between 3 and 4: #293f33 (for buttons)
 
 
 Background:
@@ -20,9 +21,9 @@ Background:
 Text:
 1 - Info
 2 - Primary
-3 - Primary links, Secondary
-4 - Success
-5 - Success links, Warning
+3 - Primary link hover, Secondary
+4 - Secondary link hover, Success
+5 - Success link hover, Warning
 
 
 Button:

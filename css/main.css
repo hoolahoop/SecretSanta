@@ -72,3 +72,11 @@ a.vibrant:hover, a.vibrant:focus {
 .late {
 	color: #212C27;
 }
+
+/*
+Focus fix
+*/
+
+:focus {
+    outline: 1px auto #759188;
+}
