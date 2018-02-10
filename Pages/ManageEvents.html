@@ -23,15 +23,21 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav mr-auto">
 			    	<li class="nav-item">
-			        	<a class="nav-link " href="Signin.html">Sign In</a>
+			        	<a class="nav-link" href="Profile.html">My Profile</a>
 			    	</li>
-			    	<li class="nav-item active">
-			        	<a class="nav-link" href="#">Register</a>
+			    	<li class="nav-item">
+			        	<a class="nav-link" href="../SecretSanta.html">Sign Out</a>
 			    	</li>
 			    </ul>
 			    <ul class="navbar-nav ml-auto">
-			    	<li class="nav-item">
-				        <a class="nav-link" href="../SecretSanta.html">Secret Santa</a>
+			    	<li class="nav-item dropdown">
+				        <a class="nav-link drowdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secret Santa</a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				        	<a class="dropdown-item" href="../SecretSanta.html">Start Page</a>
+				        	<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="CreateSecretSanta.html">Create Event</a>
+							<a class="dropdown-item active" href="#">Manage Events</a>
+						</div>
 				    </li>
 				    <li class="nav-item disabled">
 				    	<a class="nav-link disabled" href="#">Paraphernalia</a>
@@ -45,49 +51,35 @@
 					<p></p>
 				</div>
 				<div class="col-md-8 col-lg-6 col-xl-6">
-					<p class="mt-3"><h1 class="late">Register Page</h1></p>
+					<p class="mt-3"><h1 class="late">Manage Events Page</h1></p>
 				</div>
 				<div class="col-md-2 col-lg-3 col-xl-3">
 					<p></p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-2 col-lg-3"></div>
-				<div class="col-md-8 col-lg-6">
+				<div class="col-md-2 col-lg-3 col-xl-3"></div>
+				<div class="col-md-8 col-lg-6 col-xl-6">
 					<form>
 						<div class="form-group">
 					    	<label for="inputEmail">Email address</label>
-					    	<input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-					    	<small id="emailHelp" class="form-text medium">We'll never share your email with anyone else.</small>
+					    	<input type="email" class="form-control" id="inputEmail" placeholder="My email">
 						</div>
 						<div class="form-group">
 					    	<label for="inputFirstName">First name</label>
-					    	<input type="text" class="form-control" id="inputFirstName" aria-describedby="firstNameHelp" placeholder="First name">
-					    	<small id="firstNameHelp" class="form-text medium">So that everyone else knows who you are.</small>
+					    	<input type="text" class="form-control" id="inputFirstName" placeholder="My first name">
 						</div>
 						<div class="form-group">
 					    	<label for="inputLastName">Last name</label>
-					    	<input type="text" class="form-control" id="inputLastName" aria-describedby="lastNameHelp" placeholder="Last name">
-					    	<small id="lastNameHelp" class="form-text medium">Sometimes people have the same first name.</small>
+					    	<input type="text" class="form-control" id="inputLastName" placeholder="My last name">
 						</div>
-						<div class="form-group">
-					    	<label for="inputPassword">Password</label>
-					    	<input type="password" class="form-control" id="inputPassword" aria-describedby="passwordHelp" placeholder="Password">
-					    	<small id="passwordHelp" class="form-text medium">Please don't use your regular password.</small>
-						</div>
-						<div class="form-group">
-					    	<label for="inputPasswordCheck">Retype password</label>
-					    	<input type="password" class="form-control" id="inputPasswordCheck" placeholder="Retype password">
-						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="submit" class="btn btn-primary">Update Profile</button>
 					</form>
 				</div>
-				<div class="col-md-2 col-lg-3"></div>
+				<div class="col-md-2 col-lg-3 col-xl-3"></div>
 			</div>
 		</div>
 		<!--Scripts-->
-		<!--<script src="SecretSanta.js" type="text/javascript"></script>
-		<script src="SecretSantaGenerator.js" type="text/javascript"></script>-->
 		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 		<script src="../js/bootstrap.min.js"></script>

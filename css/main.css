@@ -43,7 +43,7 @@
 }
 
 .secretsanta ul.navbar-nav li.active a:hover {
-	background-color: #5E7167;
+	/*background-color: #5E7167;*/
 }
 
 /*Colors*/
@@ -78,5 +78,5 @@ Focus fix
 */
 
 :focus {
-    outline: 1px auto #759188;
+    outline: 1px auto #759188 !important;
 }

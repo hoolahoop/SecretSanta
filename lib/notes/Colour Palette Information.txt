@@ -10,6 +10,8 @@ Color 5: #212C27 - Dark Gray Green (Dark background)
 New Added Color in between 3 and 4: #293f33 (for buttons)
 
 
+Overrides
+
 Background:
 1 - Light
 2 - Success
@@ -24,7 +26,6 @@ Text:
 3 - Primary link hover, Secondary
 4 - Secondary link hover, Success
 5 - Success link hover, Warning
-
 
 Button:
 4 - Primary: 4 to 3 (Starts as the fourth color, but on hover goes to the third color)
